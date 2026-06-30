@@ -82,11 +82,42 @@
       margin: 0 0 32px;
       color: var(--muted);
     }
+
+    .lang-switcher {
+      display: flex;
+      justify-content: flex-end;
+      gap: 16px;
+      margin-bottom: 24px;
+      font-size: 0.875rem;
+    }
+
+    .lang-switcher a {
+      text-decoration: none;
+      color: var(--muted);
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .lang-switcher a:hover {
+      color: var(--accent);
+    }
+
+    .lang-switcher a.active {
+      color: var(--text);
+      pointer-events: none;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 2px;
+    }
   </style>
 </head>
 <body>
   <main>
     <article>
+      <div class="lang-switcher">
+        <a href="./" class="active">English</a>
+        <a href="./de/">Deutsch</a>
+        <a href="./es/">Español</a>
+      </div>
       <h1>Glassdays Privacy Policy</h1>
       <p class="updated">Last updated: June 30, 2026</p>
 

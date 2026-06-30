@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glassdays Datenschutzerklärung</title>
+  <meta name="description" content="Datenschutzerklärung für die Glassdays iOS-App.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fb;
+      --text: #15171d;
+      --muted: #5f6673;
+      --panel: #ffffff;
+      --border: #d9dee8;
+      --accent: #0877d8;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101217;
+        --text: #f4f6fb;
+        --muted: #b4bac7;
+        --panel: #181b22;
+        --border: #303642;
+        --accent: #67b7ff;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    article {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: clamp(24px, 5vw, 48px);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 36px 0 10px;
+      font-size: 1.25rem;
+      letter-spacing: 0;
+    }
+
+    p,
+    li {
+      font-size: 1rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .updated {
+      margin: 0 0 32px;
+      color: var(--muted);
+    }
+
+    .lang-switcher {
+      display: flex;
+      justify-content: flex-end;
+      gap: 16px;
+      margin-bottom: 24px;
+      font-size: 0.875rem;
+    }
+
+    .lang-switcher a {
+      text-decoration: none;
+      color: var(--muted);
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .lang-switcher a:hover {
+      color: var(--accent);
+    }
+
+    .lang-switcher a.active {
+      color: var(--text);
+      pointer-events: none;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 2px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <div class="lang-switcher">
+        <a href="../">English</a>
+        <a href="./" class="active">Deutsch</a>
+        <a href="../es/">Español</a>
+      </div>
+      <h1>Glassdays Datenschutzerklärung</h1>
+      <p class="updated">Zuletzt aktualisiert: 30. Juni 2026</p>
+
+      <p>Glassdays wurde so entwickelt, dass Countdown-Daten auf Ihrem Gerät verbleiben. Der Entwickler betreibt in Glassdays keine Analyse-, Werbe-, Tracking-, Absturzberichts- oder Benutzerkontensysteme.</p>
+
+      <h2>Auf dem Gerät gespeicherte Daten</h2>
+      <p>Glassdays speichert Countdowns, Ordner, Benachrichtigungseinstellungen, Anzeigeeinstellungen, ausgewählte Bilder und Widget-Daten lokal auf Ihrem Gerät und im gemeinsamen App-Gruppen-Container der App, damit die App und das Widget Ihre Countdowns anzeigen können.</p>
+      <p>Wenn Sie ein Foto aus Ihrer Fotomediathek auswählen, wird das ausgewählte Bild lokal für Countdown- oder Ordnerhintergründe gespeichert. Glassdays lädt Ihre ausgewählten Bilder aus der Fotomediathek nicht zum Entwickler hoch.</p>
+
+      <h2>Netzwerkfunktionen</h2>
+      <p>Glassdays verwendet Netzwerkanfragen für diese Funktionen:</p>
+      <ul>
+        <li>Sammlungen-Voreinstellungen: Die App lädt Galerie-Daten und zugehörige voreingestellte Bilder aus dem auf GitHub gehosteten CountdownJSON-Repository des Entwicklers herunter.</li>
+        <li>Unsplash-Suche: Wenn Sie Unsplash durchsuchen, wird Ihre Suchanfrage an die Unsplash-API gesendet und Unsplash-Bild-URLs werden über das CDN von Unsplash geladen.</li>
+        <li>Optionale Support-Links: Ko-fi-Links werden außerhalb der App geöffnet.</li>
+        <li>Optionale Support-E-Mail: Wenn Sie Feedback oder einen Fehlerbericht senden, wird der Inhalt der E-Mail von Ihrem E-Mail-Anbieter an die Support-Adresse des Entwicklers gesendet.</li>
+      </ul>
+      <p>Der Entwickler verwendet diese Anfragen nicht für Werbung oder Tracking. Drittanbieter-Dienste können standardmäßige Netzwerkinformationen wie IP-Adresse, Geräte-/Browser-/Netzwerk-Metadaten, Server-Protokolle und den Inhalt der an sie gesendeten Anfragen gemäß ihren eigenen Datenschutzrichtlinien verarbeiten.</p>
+
+      <h2>Benachrichtigungen</h2>
+      <p>Glassdays plant lokale Benachrichtigungen auf Ihrem Gerät. Benachrichtigungseinstellungen und -offsets werden lokal gespeichert. Der Entwickler erhält keine Benachrichtigungsinhalte.</p>
+
+      <h2>Widgets</h2>
+      <p>Countdown-Widgets lesen Countdown-Daten aus dem gemeinsamen lokalen App-Gruppenspeicher. Das Widget sendet keine Countdown-Daten an den Entwickler.</p>
+
+      <h2>Tracking</h2>
+      <p>Glassdays verfolgt Sie nicht über Apps oder Websites hinweg und verwendet keine Werbe-Identifikationsnummer.</p>
+
+      <h2>Kontakt</h2>
+      <p>Wenn Sie den Entwickler für Support kontaktieren, erhält der Entwickler die Informationen, die Sie in Ihrer Nachricht angeben.</p>
+    </article>
+  </main>
+</body>
+</html>

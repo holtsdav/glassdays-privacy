@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidad de Glassdays</title>
+  <meta name="description" content="Política de privacidad de la aplicación iOS Glassdays.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fb;
+      --text: #15171d;
+      --muted: #5f6673;
+      --panel: #ffffff;
+      --border: #d9dee8;
+      --accent: #0877d8;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101217;
+        --text: #f4f6fb;
+        --muted: #b4bac7;
+        --panel: #181b22;
+        --border: #303642;
+        --accent: #67b7ff;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    article {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: clamp(24px, 5vw, 48px);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 36px 0 10px;
+      font-size: 1.25rem;
+      letter-spacing: 0;
+    }
+
+    p,
+    li {
+      font-size: 1rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .updated {
+      margin: 0 0 32px;
+      color: var(--muted);
+    }
+
+    .lang-switcher {
+      display: flex;
+      justify-content: flex-end;
+      gap: 16px;
+      margin-bottom: 24px;
+      font-size: 0.875rem;
+    }
+
+    .lang-switcher a {
+      text-decoration: none;
+      color: var(--muted);
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .lang-switcher a:hover {
+      color: var(--accent);
+    }
+
+    .lang-switcher a.active {
+      color: var(--text);
+      pointer-events: none;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 2px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <div class="lang-switcher">
+        <a href="../">English</a>
+        <a href="../de/">Deutsch</a>
+        <a href="./" class="active">Español</a>
+      </div>
+      <h1>Política de privacidad de Glassdays</h1>
+      <p class="updated">Última actualización: 30 de junio de 2026</p>
+
+      <p>Glassdays está diseñada para mantener los datos de las cuentas regresivas en tu dispositivo. El desarrollador no ejecuta sistemas de análisis, publicidad, seguimiento, informes de errores o cuentas de usuario en Glassdays.</p>
+
+      <h2>Datos almacenados en el dispositivo</h2>
+      <p>Glassdays almacena cuentas regresivas, carpetas, preferencias de notificación, preferencias de visualización, imágenes seleccionadas y datos de widgets localmente en tu dispositivo y en el contenedor de grupo de aplicaciones compartido para que la aplicación y el widget puedan mostrar tus cuentas regresivas.</p>
+      <p>Si eliges una foto de tu biblioteca de fotos, la imagen seleccionada se almacena localmente para los fondos de las cuentas regresivas o carpetas. Glassdays no sube las imágenes seleccionadas de tu biblioteca de fotos al desarrollador.</p>
+
+      <h2>Funciones de red</h2>
+      <p>Glassdays utiliza solicitudes de red para estas funciones:</p>
+      <ul>
+        <li>Ajustes preestablecidos de colecciones: la aplicación descarga datos de la galería e imágenes preestablecidas relacionadas desde el repositorio CountdownJSON del desarrollador alojado en GitHub.</li>
+        <li>Búsqueda en Unsplash: cuando buscas en Unsplash, tu consulta de búsqueda se envía a la API de Unsplash y las URL de las imágenes de Unsplash se cargan desde la CDN de Unsplash.</li>
+        <li>Enlaces de soporte opcionales: los enlaces de Ko-fi se abren fuera de la aplicación.</li>
+        <li>Correo electrónico de soporte opcional: si envías comentarios o un informe de errores, el proveedor de correo envía el contenido del correo a la dirección de soporte del desarrollador.</li>
+      </ul>
+      <p>El desarrollador no utiliza estas solicitudes para publicidad o seguimiento. Los servicios de terceros pueden procesar información de red estándar, como la dirección IP, metadatos del dispositivo/navegador/red, registros del servidor y el contenido de las solicitudes que se les envían, bajo sus propias políticas de privacidad.</p>
+
+      <h2>Notificaciones</h2>
+      <p>Glassdays programa notificaciones locales en tu dispositivo. Los ajustes de notificación y las compensaciones se almacenan localmente. El desarrollador no recibe el contenido de las notificaciones.</p>
+
+      <h2>Widgets</h2>
+      <p>Los widgets de cuenta regresiva leen los datos de la cuenta regresiva desde el almacenamiento local compartido del grupo de aplicaciones. El widget no envía datos de la cuenta regresiva al desarrollador.</p>
+
+      <h2>Seguimiento</h2>
+      <p>Glassdays no te rastrea a través de aplicaciones o sitios web y no utiliza el identificador de publicidad.</p>
+
+      <h2>Contacto</h2>
+      <p>Si te pones en contacto con el desarrollador para obtener soporte, el desarrollador recibe la información que decidas incluir en tu mensaje.</p>
+    </article>
+  </main>
+</body>
+</html>
