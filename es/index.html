@@ -119,9 +119,9 @@
         <a href="./" class="active">Español</a>
       </div>
       <h1>Política de privacidad de Glassdays</h1>
-      <p class="updated">Última actualización: 10 de julio de 2026</p>
+      <p class="updated">Última actualización: 17 de julio de 2026</p>
 
-      <p>Glassdays está diseñada para mantener los datos de las cuentas regresivas en tu dispositivo. El desarrollador no ejecuta sistemas de análisis, publicidad, seguimiento, informes de errores o cuentas de usuario en Glassdays.</p>
+      <p>Glassdays está diseñada para mantener el contenido de tus cuentas regresivas en tu dispositivo. La app utiliza análisis de uso anónimos centrados en la privacidad y un servicio de validación de compras, como se describe a continuación. Glassdays no utiliza publicidad, seguimiento entre aplicaciones, informes de fallos ni un sistema de cuentas gestionado por el desarrollador.</p>
 
       <h2>Datos almacenados en el dispositivo</h2>
       <p>Glassdays almacena cuentas regresivas, carpetas, preferencias de notificación, preferencias de visualización, imágenes seleccionadas y datos de widgets localmente en tu dispositivo y en el contenedor de grupo de aplicaciones compartido para que la aplicación y el widget puedan mostrar tus cuentas regresivas.</p>
@@ -134,11 +134,19 @@
       <h2>Acceso al calendario</h2>
       <p>Si eliges «Añadir al calendario de Apple», Glassdays solicita acceso al calendario y crea, actualiza o elimina los eventos que selecciones. El título, la fecha, la repetición y la zona horaria elegida se envían al calendario de tu dispositivo. Puedes revocar el acceso en cualquier momento desde Ajustes de iOS.</p>
 
+      <h2>Análisis de uso anónimos</h2>
+      <p>Glassdays utiliza TelemetryDeck para saber si la app se utiliza y qué puntos de acceso a Pro resultan útiles. TelemetryDeck recibe un identificador de instalación anónimo generado al azar; eventos de instalación y sesión; un evento cuando se muestra la pantalla de Glassdays Pro; y una etiqueta de origen fija que indica desde dónde se abrió esa pantalla. Las marcas de tiempo de los eventos se redondean a la hora. También pueden incluirse metadatos estándar de la app y el dispositivo, como la versión de la app y del sistema operativo, el modelo del dispositivo, el idioma, la región y las características de la pantalla.</p>
+      <p>Glassdays no envía a TelemetryDeck títulos de cuentas regresivas, nombres de carpetas, información del calendario, búsquedas de imágenes, identificadores de transacciones, direcciones de correo electrónico ni otro contenido de texto libre. Puedes desactivar futuras recopilaciones de TelemetryDeck en cualquier momento mediante «Compartir análisis anónimos», dentro de «Privacidad y aspectos legales» en Ajustes de Glassdays. Desactivarlo no elimina eventos ya enviados ni afecta a las compras, su validación o su restauración mediante StoreKit y RevenueCat.</p>
+
+      <h2>Compras y RevenueCat</h2>
+      <p>Apple StoreKit procesa las compras de Glassdays Pro. Glassdays también utiliza RevenueCat para validar, conciliar, restaurar y generar informes de compras. RevenueCat recibe un identificador de cliente anónimo generado por su SDK, información de recibos y transacciones proporcionada por Apple y el historial de compras necesario para la validación, el análisis y la restauración. Glassdays no envía análisis de uso ni de la pantalla Pro a RevenueCat.</p>
+      <p>El procesamiento de compras de RevenueCat es independiente de la preferencia de análisis de TelemetryDeck. Desactivar «Compartir análisis anónimos» no impide que StoreKit o RevenueCat procesen la información de compra necesaria para proporcionar Glassdays Pro y restaurar compras anteriores.</p>
+
       <h2>Funciones de red</h2>
       <p>Glassdays utiliza solicitudes de red para estas funciones:</p>
       <ul>
         <li>Ajustes preestablecidos de colecciones: la aplicación descarga datos de la galería e imágenes preestablecidas relacionadas desde el repositorio CountdownJSON del desarrollador alojado en GitHub.</li>
-        <li>Búsqueda en Unsplash: cuando buscas en Unsplash, tu consulta se envía a la API de Unsplash y las URL de imágenes se cargan directamente desde su CDN. Al elegir una foto de Unsplash, Glassdays informa ese evento de descarga a Unsplash y muestra atribución enlazada tanto al fotógrafo como a Unsplash.</li>
+        <li>Búsqueda en Unsplash: cuando buscas en Unsplash, tu consulta pasa por el proxy Cloudflare Worker del desarrollador hasta la API de Unsplash. El proxy procesa la consulta únicamente en tiempo real para devolver resultados; el desarrollador no recopila, almacena, registra ni conserva la consulta, la dirección IP, los encabezados de la solicitud ni otros datos personales. Las URL de imágenes se cargan directamente desde el CDN de Unsplash. Al elegir una foto de Unsplash, Glassdays informa ese evento de descarga a Unsplash y muestra atribución enlazada tanto al fotógrafo como a Unsplash.</li>
         <li>Enlaces de soporte opcionales: los enlaces de Ko-fi se abren fuera de la aplicación.</li>
         <li>Correo electrónico de soporte opcional: si envías comentarios o un informe de errores, el proveedor de correo envía el contenido del correo a la dirección de soporte del desarrollador.</li>
       </ul>
@@ -161,7 +169,7 @@
       <p>Para preguntas sobre privacidad o para solicitar la eliminación de información incluida en un mensaje de soporte, escribe a <a href="mailto:8-kapsel-guertel@icloud.com">8-kapsel-guertel@icloud.com</a>.</p>
 
       <h2>Servicios de terceros</h2>
-      <p>Los servicios de Apple, Unsplash, GitHub, Ko-fi y tu proveedor de correo tienen sus propias prácticas de privacidad. El tratamiento que hagan de la información se rige por sus respectivas políticas.</p>
+      <p>Los servicios de Apple, Cloudflare, Unsplash, GitHub, Ko-fi y tu proveedor de correo tienen sus propias prácticas de privacidad. El tratamiento que hagan de la información se rige por sus respectivas políticas. Consulta también la <a href="https://telemetrydeck.com/privacy/">Política de privacidad de TelemetryDeck</a> y la <a href="https://www.revenuecat.com/privacy/">Política de privacidad de RevenueCat</a>.</p>
     </article>
   </main>
 </body>

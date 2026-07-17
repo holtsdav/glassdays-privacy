@@ -119,9 +119,9 @@
         <a href="../es/">Español</a>
       </div>
       <h1>Glassdays Datenschutzerklärung</h1>
-      <p class="updated">Zuletzt aktualisiert: 10. Juli 2026</p>
+      <p class="updated">Zuletzt aktualisiert: 17. Juli 2026</p>
 
-      <p>Glassdays wurde so entwickelt, dass Countdown-Daten auf Ihrem Gerät verbleiben. Der Entwickler betreibt in Glassdays keine Analyse-, Werbe-, Tracking-, Absturzberichts- oder Benutzerkontensysteme.</p>
+      <p>Glassdays wurde so entwickelt, dass Ihre Countdown-Inhalte auf Ihrem Gerät verbleiben. Die App verwendet datenschutzfreundliche, anonyme Nutzungsanalysen und einen Dienst zur Kaufvalidierung, wie unten beschrieben. Glassdays verwendet keine Werbung, kein appübergreifendes Tracking, keine Absturzberichte und kein vom Entwickler betriebenes Benutzerkontensystem.</p>
 
       <h2>Auf dem Gerät gespeicherte Daten</h2>
       <p>Glassdays speichert Countdowns, Ordner, Benachrichtigungseinstellungen, Anzeigeeinstellungen, ausgewählte Bilder und Widget-Daten lokal auf Ihrem Gerät und im gemeinsamen App-Gruppen-Container der App, damit die App und das Widget Ihre Countdowns anzeigen können.</p>
@@ -134,11 +134,19 @@
       <h2>Kalenderzugriff</h2>
       <p>Wenn Sie „Zum Apple-Kalender hinzufügen“ wählen, fragt Glassdays nach Kalenderzugriff und erstellt, aktualisiert oder entfernt die von Ihnen gewählten Kalenderereignisse. Titel, Datum, Wiederholung und gewählte Zeitzone werden an den Kalender auf Ihrem Gerät übergeben. Sie können den Zugriff jederzeit in den iOS-Einstellungen widerrufen.</p>
 
+      <h2>Anonyme Nutzungsanalyse</h2>
+      <p>Glassdays verwendet TelemetryDeck, um zu verstehen, ob die App genutzt wird und welche Pro-Einstiegspunkte hilfreich sind. TelemetryDeck erhält eine zufällig erzeugte, anonyme Installationskennung, Installations- und Sitzungsereignisse, ein Ereignis beim Anzeigen der Glassdays-Pro-Ansicht sowie eine feste Quellenbezeichnung, die beschreibt, von wo diese Ansicht geöffnet wurde. Ereigniszeitstempel werden auf die Stunde gerundet. Außerdem können standardmäßige App- und Gerätemetadaten wie App-Version, Betriebssystemversion, Gerätemodell, Sprache, Region und Bildschirmeigenschaften enthalten sein.</p>
+      <p>Glassdays sendet keine Countdown-Titel, Ordnernamen, Kalenderinformationen, Bildsuchen, Transaktionskennungen, E-Mail-Adressen oder andere frei formulierte Inhalte an TelemetryDeck. Sie können die zukünftige TelemetryDeck-Erfassung jederzeit mit „Anonyme Analysedaten teilen“ unter „Datenschutz &amp; Rechtliches“ in den Glassdays-Einstellungen deaktivieren. Dadurch werden bereits übermittelte Ereignisse nicht gelöscht und Käufe, Kaufvalidierung oder Wiederherstellung über StoreKit und RevenueCat nicht beeinflusst.</p>
+
+      <h2>Käufe und RevenueCat</h2>
+      <p>Apple StoreKit verarbeitet Käufe von Glassdays Pro. Glassdays verwendet außerdem RevenueCat, um Käufe zu validieren, abzugleichen, wiederherzustellen und auszuwerten. RevenueCat erhält eine vom SDK erzeugte anonyme Kundenkennung, von Apple bereitgestellte Beleg- und Transaktionsinformationen sowie die für Validierung, Analyse und Wiederherstellung benötigte Kaufhistorie. Glassdays sendet keine Nutzungs- oder Pro-Ansichtsanalysen an RevenueCat.</p>
+      <p>Die Kaufverarbeitung durch RevenueCat ist von der TelemetryDeck-Analyseeinstellung unabhängig. Das Deaktivieren von „Anonyme Analysedaten teilen“ hindert StoreKit oder RevenueCat nicht daran, Kaufinformationen zu verarbeiten, die für Glassdays Pro und die Wiederherstellung früherer Käufe benötigt werden.</p>
+
       <h2>Netzwerkfunktionen</h2>
       <p>Glassdays verwendet Netzwerkanfragen für diese Funktionen:</p>
       <ul>
         <li>Sammlungen-Voreinstellungen: Die App lädt Galerie-Daten und zugehörige voreingestellte Bilder aus dem auf GitHub gehosteten CountdownJSON-Repository des Entwicklers herunter.</li>
-        <li>Unsplash-Suche: Wenn Sie Unsplash durchsuchen, wird Ihre Suchanfrage an die Unsplash-API gesendet und Bild-URLs werden direkt über das CDN von Unsplash geladen. Wenn Sie ein Unsplash-Foto auswählen, meldet Glassdays dieses Download-Ereignis an Unsplash und zeigt verlinkte Urheber- sowie Unsplash-Quellenangaben.</li>
+        <li>Unsplash-Suche: Wenn Sie Unsplash durchsuchen, wird Ihre Suchanfrage über den Cloudflare-Worker-Proxy des Entwicklers an die Unsplash-API weitergeleitet. Der Proxy verarbeitet die Anfrage nur in Echtzeit, um Ergebnisse zurückzugeben; der Entwickler erhebt, speichert, protokolliert oder bewahrt weder die Suchanfrage noch die IP-Adresse, Anfrage-Header oder andere personenbezogene Daten auf. Bild-URLs werden direkt über das CDN von Unsplash geladen. Wenn Sie ein Unsplash-Foto auswählen, meldet Glassdays dieses Download-Ereignis an Unsplash und zeigt verlinkte Urheber- sowie Unsplash-Quellenangaben.</li>
         <li>Optionale Support-Links: Ko-fi-Links werden außerhalb der App geöffnet.</li>
         <li>Optionale Support-E-Mail: Wenn Sie Feedback oder einen Fehlerbericht senden, wird der Inhalt der E-Mail von Ihrem E-Mail-Anbieter an die Support-Adresse des Entwicklers gesendet.</li>
       </ul>
@@ -161,7 +169,7 @@
       <p>Bei Fragen zum Datenschutz oder einem Löschwunsch zu einer Support-Nachricht schreiben Sie an <a href="mailto:8-kapsel-guertel@icloud.com">8-kapsel-guertel@icloud.com</a>.</p>
 
       <h2>Drittanbieter-Dienste</h2>
-      <p>Apple-Dienste, Unsplash, GitHub, Ko-fi und Ihr E-Mail-Anbieter haben eigene Datenschutzpraktiken. Für deren Verarbeitung gelten die jeweiligen Datenschutzrichtlinien.</p>
+      <p>Apple-Dienste, Cloudflare, Unsplash, GitHub, Ko-fi und Ihr E-Mail-Anbieter haben eigene Datenschutzpraktiken. Für deren Verarbeitung gelten die jeweiligen Datenschutzrichtlinien. Siehe auch die <a href="https://telemetrydeck.com/privacy/">Datenschutzerklärung von TelemetryDeck</a> und die <a href="https://www.revenuecat.com/privacy/">Datenschutzerklärung von RevenueCat</a>.</p>
     </article>
   </main>
 </body>
